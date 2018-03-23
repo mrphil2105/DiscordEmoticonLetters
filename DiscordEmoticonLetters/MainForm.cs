@@ -33,6 +33,10 @@ namespace DiscordEmoticonLetters
                     outputBuilder.Append(txtPattern.Text.Replace("$", characterStr));
                     outputBuilder.Append(' ');
                 }
+                else if (characterStr == " ")
+                {
+                    outputBuilder.Append("  ");
+                }
                 else
                 {
                     outputBuilder.Append(characterStr);
