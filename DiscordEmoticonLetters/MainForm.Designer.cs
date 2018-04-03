@@ -58,7 +58,7 @@
             this.txtOutput.ReadOnly = true;
             this.txtOutput.Size = new System.Drawing.Size(303, 22);
             this.txtOutput.TabIndex = 1;
-            this.txtOutput.Text = "Type something above!";
+            this.txtOutput.Text = "Type something above! (only letters/spaces)";
             // 
             // lblPattern
             // 
@@ -99,6 +99,7 @@
             this.txtInput.Size = new System.Drawing.Size(303, 22);
             this.txtInput.TabIndex = 0;
             this.txtInput.TextChanged += new System.EventHandler(this.OnTextChanged);
+            this.txtInput.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.OnKeyPress);
             // 
             // lblCreator
             // 
